@@ -25,8 +25,8 @@ class Program
         //The Acos process that determines the angles of the triangles
         Console.WriteLine("");
         double angleA = Math.Acos((lengthB*lengthB + lengthC*lengthC - lengthA*lengthA) / (2 * lengthB * lengthC)) * (180/Math.PI);
-  double angleB = Math.Acos((lengthC*lengthC + lengthA*lengthA - lengthB*lengthB) / (2 * lengthC * lengthA)) * (180/Math.PI);
-  double angleC = Math.Acos((lengthA*lengthA + lengthB*lengthB - lengthC*lengthC) / (2 * lengthA * lengthB)) * (180/Math.PI);
+        double angleB = Math.Acos((lengthC*lengthC + lengthA*lengthA - lengthB*lengthB) / (2 * lengthC * lengthA)) * (180/Math.PI);
+        double angleC = Math.Acos((lengthA*lengthA + lengthB*lengthB - lengthC*lengthC) / (2 * lengthA * lengthB)) * (180/Math.PI);
         //Sum of angels A, B, and C
         double sumOfAngles = (angleA + angleB + angleC);
         //Output for every triangle
@@ -37,15 +37,15 @@ class Program
         }
         else if (angleA == angleB && angleB == angleC)
         {
-        Console.WriteLine("This is an equilateral triangle");
+            Console.WriteLine("This is an equilateral triangle");
         }
         else if (angleA == angleB || angleA == angleC || angleB == angleC)
         {
-        Console.WriteLine("This is an isoscolese triangle");
+            Console.WriteLine("This is an isoscolese triangle");
         }
         else if (angleA != angleB && angleA != angleC && angleB != angleC)
         {
-        Console.WriteLine("This is a scalene triangle");
+            Console.WriteLine("This is a scalene triangle");
         }
         //Done
         Console.WriteLine("\nDone");
