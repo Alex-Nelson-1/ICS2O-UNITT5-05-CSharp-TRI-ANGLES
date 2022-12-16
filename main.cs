@@ -11,7 +11,6 @@ class Program
         //Explanation
         Console.WriteLine("This algorithm will be able to tell you the angles of any TRIANGLE. If the angles do not add up to 180 it is not a triangle.");
         Console.WriteLine("");
-        
         //input variables for side lengths 1, 2, and 3
         Console.WriteLine("Please enter side length 1");
         double lengthA = Convert.ToInt32(Console.ReadLine());
@@ -28,10 +27,8 @@ class Program
         double angleA = Math.Acos((lengthB*lengthB + lengthC*lengthC - lengthA*lengthA) / (2 * lengthB * lengthC)) * (180/Math.PI);
   double angleB = Math.Acos((lengthC*lengthC + lengthA*lengthA - lengthB*lengthB) / (2 * lengthC * lengthA)) * (180/Math.PI);
   double angleC = Math.Acos((lengthA*lengthA + lengthB*lengthB - lengthC*lengthC) / (2 * lengthA * lengthB)) * (180/Math.PI);
-        
         //Sum of angels A, B, and C
         double sumOfAngles = (angleA + angleB + angleC);
-        
         //Output for every triangle
         if (sumOfAngles != 180 && sumOfAngles != 180.00000000000003)
         {
