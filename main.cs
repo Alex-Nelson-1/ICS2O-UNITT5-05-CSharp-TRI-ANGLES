@@ -21,7 +21,6 @@ class Program
         Console.WriteLine("Please enter side length 3");
         double lengthC = Convert.ToInt32(Console.ReadLine());
         Console.WriteLine("");
-        
         //The Acos process that determines the angles of the triangles
         Console.WriteLine("");
         double angleA = Math.Acos((lengthB * lengthB + lengthC * lengthC - lengthA * lengthA) / (2 * lengthB * lengthC)) * (180 / Math.PI);
